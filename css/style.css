@@ -1177,7 +1177,7 @@ section.backlight-top:last-child::before {
     top: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient( 50vw circle at var(--mouse-x) var(--mouse-y), var(--bringer-s-cursor-light), transparent 50% );
+    background: radial-gradient(50vw circle at var(--mouse-x) var(--mouse-y), var(--bringer-s-cursor-light), transparent 50%);
     opacity: 0.75;
     z-index: 1;
 }
