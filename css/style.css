@@ -4311,3 +4311,55 @@ button.pswp__button.bringer-pswp-next::after {
 [data-appear="zoom-out-down-right"] {
     transform: translate(calc(-1 * var(--stea-move)), calc(-1 * var(--stea-move))) scale(var(--stea-zoom-out));
 }
+
+/* Final CSS for Centered Logos with Padding */
+
+/* 1. The white container section for each logo */
+.swiper-slide .bringer-client-logo {
+    display: flex;
+    align-items: center;        /* Vertically centers the logo */
+    justify-content: center;    /* Horizontally centers the logo */
+
+    /* Fixed size for the white box */
+    width: 180px;
+    height: 100px;
+    
+    /* --- Styles for the white section --- */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    /* --- Adds padding INSIDE the white box --- */
+    padding: 15px; /* Adjust this value as needed */
+    box-sizing: border-box; /* IMPORTANT: Keeps the box at 180x100px */
+    
+    /* --- Centers the box within the slider column --- */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 2. The Logo Image itself */
+.swiper-slide .bringer-client-logo img {
+    /* Make the logo fill the available space inside the padded area */
+    max-width: 100%;
+    max-height: 100%;
+    
+    /* Keeps the logo's original shape without stretching */
+    object-fit: contain;
+}
+
+/* Apply 60px top padding to the address block on tablet and mobile devices about section */
+@media (max-width: 991px) {
+  .mobile-address-padding {
+    padding-top: 60px;
+  }
+}
+/* Apply 15px top padding to the contact grid on laptop and desktop devices about section*/
+@media (min-width: 992px) {
+  .laptop-grid-padding {
+    padding-top: 25px;
+  }
+}
+.about-start{
+    padding-top: 10px;
+}
