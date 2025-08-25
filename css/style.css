@@ -4348,18 +4348,26 @@ button.pswp__button.bringer-pswp-next::after {
     object-fit: contain;
 }
 
-/* Apply 60px top padding to the address block on tablet and mobile devices about section */
+/* Apply 90px top padding to the address block on tablet and mobile devices */
 @media (max-width: 991px) {
   .mobile-address-padding {
-    padding-top: 60px;
+    padding-top: 90px;
   }
 }
-/* Apply 15px top padding to the contact grid on laptop and desktop devices about section*/
+
+/* Apply 25px top padding to the contact grid on laptop and desktop devices */
 @media (min-width: 992px) {
   .laptop-grid-padding {
     padding-top: 25px;
   }
 }
-.about-start{
-    padding-top: 10px;
+@media (max-width: 992px) {
+  .laptop-grid-padding {
+    padding-top: 20px;
+  }
+}
+
+/* Default padding for the about section */
+.about-start {
+  padding-top: 10px;
 }
