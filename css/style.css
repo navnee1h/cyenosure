@@ -4313,7 +4313,9 @@ button.pswp__button.bringer-pswp-next::after {
 }
 
 /* Final CSS for Centered Logos with Padding */
-
+.client-logo-slider{
+    width:1100px;
+}
 /* 1. The white container section for each logo */
 .swiper-slide .bringer-client-logo {
     display: flex;
@@ -4338,36 +4340,42 @@ button.pswp__button.bringer-pswp-next::after {
     margin-right: auto;
 }
 
-/* 2. The Logo Image itself */
+/* 1. Logo Image Styling */
 .swiper-slide .bringer-client-logo img {
-    /* Make the logo fill the available space inside the padded area */
     max-width: 100%;
     max-height: 100%;
-    
-    /* Keeps the logo's original shape without stretching */
-    object-fit: contain;
+    object-fit: contain; /* Keeps original shape */
+    border-radius: 8px;  /* Default radius (for laptop & tablet) */
 }
 
-/* Apply 90px top padding to the address block on tablet and mobile devices */
+/* Remove border-radius on mobile devices */
+@media (max-width: 767px) {
+  .swiper-slide .bringer-client-logo img {
+    border-radius: 0;
+  }
+}
+
+/* 2. Address Block Padding */
 @media (max-width: 991px) {
   .mobile-address-padding {
     padding-top: 90px;
   }
 }
 
-/* Apply 25px top padding to the contact grid on laptop and desktop devices */
+/* 3. Contact Grid Padding */
 @media (min-width: 992px) {
   .laptop-grid-padding {
     padding-top: 25px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .laptop-grid-padding {
     padding-top: 20px;
   }
 }
 
-/* Default padding for the about section */
+/* 4. About Section Default Padding */
 .about-start {
   padding-top: 10px;
 }
+
