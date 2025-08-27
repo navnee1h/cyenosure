@@ -4313,9 +4313,6 @@ button.pswp__button.bringer-pswp-next::after {
 }
 
 /* Final CSS for Centered Logos with Padding */
-.client-logo-slider{
-    width:1100px;
-}
 /* 1. The white container section for each logo */
 .swiper-slide .bringer-client-logo {
     display: flex;
@@ -4355,19 +4352,26 @@ button.pswp__button.bringer-pswp-next::after {
   }
 }
 
-/* 2. Address Block Padding */
+/* 2. Address Block Padding + Client Logo Widths */
 @media (max-width: 991px) {
+  .client-logo-slider {
+    width: 450px; /* Mobile width */
+  }
   .mobile-address-padding {
     padding-top: 90px;
   }
 }
 
-/* 3. Contact Grid Padding */
 @media (min-width: 992px) {
+  .client-logo-slider {
+    width: 1100px; /* Laptop/desktop width */
+  }
   .laptop-grid-padding {
     padding-top: 25px;
   }
 }
+
+/* 3. Contact Grid Padding */
 @media (max-width: 991px) {
   .laptop-grid-padding {
     padding-top: 20px;
@@ -4378,4 +4382,3 @@ button.pswp__button.bringer-pswp-next::after {
 .about-start {
   padding-top: 10px;
 }
-
