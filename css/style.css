@@ -4382,3 +4382,11 @@ button.pswp__button.bringer-pswp-next::after {
 .about-start {
   padding-top: 10px;
 }
+/* --- Complete CSS for Solid-Color Icons --- */
+/* Style for the large step numbers */
+@media (min-width: 1024px) {
+  .landing-page {
+    margin-top: -80px !important;
+  }
+}
+
